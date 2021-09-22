@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4425885626FB9FE3005A9DF8 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4425885526FB9FE3005A9DF8 /* SnapKit.framework */; };
 		4425886626FBA1E9005A9DF8 /* CustomFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4425885C26FBA1E9005A9DF8 /* CustomFramework.framework */; };
 		4425886D26FBA1E9005A9DF8 /* CustomFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4425886C26FBA1E9005A9DF8 /* CustomFrameworkTests.swift */; };
 		4425887126FBA1E9005A9DF8 /* CustomFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4425885C26FBA1E9005A9DF8 /* CustomFramework.framework */; };
 		4425887226FBA1E9005A9DF8 /* CustomFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4425885C26FBA1E9005A9DF8 /* CustomFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4425887A26FBA20E005A9DF8 /* CustomFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4425887926FBA20E005A9DF8 /* CustomFramework.swift */; };
+		443AFB7526FBA7B700ADEB4E /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443AFB7426FBA7B700ADEB4E /* SnapKit.xcframework */; };
+		443AFB7626FBA7B700ADEB4E /* SnapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 443AFB7426FBA7B700ADEB4E /* SnapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4484A29626FB9A76007464E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4484A29526FB9A76007464E9 /* AppDelegate.swift */; };
 		4484A29826FB9A76007464E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4484A29726FB9A76007464E9 /* SceneDelegate.swift */; };
 		4484A29A26FB9A76007464E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4484A29926FB9A76007464E9 /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				443AFB7626FBA7B700ADEB4E /* SnapKit.xcframework in Embed Frameworks */,
 				4425887226FBA1E9005A9DF8 /* CustomFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -68,11 +70,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4425885526FB9FE3005A9DF8 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		4425885C26FBA1E9005A9DF8 /* CustomFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4425886526FBA1E9005A9DF8 /* CustomFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4425886C26FBA1E9005A9DF8 /* CustomFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFrameworkTests.swift; sourceTree = "<group>"; };
 		4425887926FBA20E005A9DF8 /* CustomFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFramework.swift; sourceTree = "<group>"; };
+		443AFB7426FBA7B700ADEB4E /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SnapKit.xcframework; path = Carthage/Build/SnapKit.xcframework; sourceTree = "<group>"; };
 		4484A29226FB9A76007464E9 /* CarthageHighlighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarthageHighlighting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4484A29526FB9A76007464E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4484A29726FB9A76007464E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,8 +108,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443AFB7526FBA7B700ADEB4E /* SnapKit.xcframework in Frameworks */,
 				4425887126FBA1E9005A9DF8 /* CustomFramework.framework in Frameworks */,
-				4425885626FB9FE3005A9DF8 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +188,7 @@
 		4484A2C526FB9BAA007464E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4425885526FB9FE3005A9DF8 /* SnapKit.framework */,
+				443AFB7426FBA7B700ADEB4E /* SnapKit.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -249,7 +251,6 @@
 				4484A28F26FB9A76007464E9 /* Frameworks */,
 				4484A29026FB9A76007464E9 /* Resources */,
 				4425885226FB9F3C005A9DF8 /* Embed Frameworks */,
-				4425885426FB9F96005A9DF8 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -359,29 +360,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4425885426FB9F96005A9DF8 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
-			);
-			name = Carthage;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4425885826FBA1E9005A9DF8 /* Sources */ = {
@@ -701,10 +679,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = CarthageHighlighting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -724,10 +698,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = CarthageHighlighting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
